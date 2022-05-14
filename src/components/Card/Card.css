@@ -1,0 +1,83 @@
+.card-cont {
+    width: 300px;
+    padding: 10px 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 1px solid var(--bx-shadow);
+    box-shadow: 0px 0px 10px var(--bx-shadow);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-cont h2 {
+    height: 50px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-cont:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sprites {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.hp {
+    margin-top: 5px;
+}
+
+.hp,
+.ability,
+.attack,
+.defense,
+.height,
+.weight {
+    height: 40px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hp img,
+.ability img,
+.attack img,
+.defense img,
+.height img,
+.weight img {
+    margin-right: 15px;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hp,
+    .ability,
+    .attack,
+    .defense,
+    .height,
+    .weight {
+        margin-top: 20px;
+    }
+    .hp img,
+    .ability img,
+    .attack img,
+    .defense img,
+    .height img,
+    .weight img {
+        margin-top: 0;
+    }
+}
